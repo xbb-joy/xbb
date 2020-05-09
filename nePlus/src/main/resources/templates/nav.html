@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Insert title here</title>
+</head>
+<body>
+<nav class="navbar-default navbar-static-side" role="navigation" th:fragment="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element" style="text-align: center">
+                    	<span>
+                            <img alt="image" class="img-circle" th:src="@{/img/cat.jpg}" height="48px" width="48px"/>
+                            <!--<img  th:src="@{'/img/user/'+${session.user.getUserName()}+'.jpg'}" alt="image" class="img-circle" height="48px" width="48px"/>-->
+                            <!--<tb th:text="@{session.user.getImage()}"></tb>-->
+						</span>
+                    <a data-toggle="dropdown" class="dropdown-toggle">
+                            <span class="clear">
+                                <a th:href="@{/editUser}">
+                            	<span class="block m-t-xs">
+                            		<strong class="font-bold fs16" th:text="${session.user.getName()}">username</strong>
+                             	</span>
+                                </a>
+                            </span>
+                    </a>
+                </div>
+                <div class="logo-element">
+                    E+
+                </div>
+            </li>
+            <li>
+                <a th:href="@{/index}"><i class="fa fa-diamond"></i> <span class="nav-label">首页</span></a>
+            </li>
+            <li th:if="${session.user.getType() == 'admin'}">
+                <a th:href="@{/user/list}"><i class="fa fa-user-md"></i> <span class="nav-label">用户管理</span></a>
+            </li>
+
+            <li>
+                <a th:href="@{/data/list}"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">数据管理</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+</body>
+</html>
+
+
+

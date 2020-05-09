@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>后台信息管理系统</title>
+
+    <link th:href="@{/css/animate.css}" rel="stylesheet"/>
+
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/font-awesome/css/font-awesome.css}" rel="stylesheet"/>
+
+    <!-- Toastr style -->
+    <link th:href="@{/css/plugins/toastr/toastr.min.css}" rel="stylesheet"/>
+
+    <link th:href="@{/css/style.css}" rel="stylesheet"/>
+
+    <!-- summernote style -->
+    <link th:href="@{/css/plugins/summernote/summernote.css}" rel="stylesheet"/>
+    <link th:href="@{/css/plugins/summernote/summernote-bs3.css}" rel="stylesheet"/>
+
+    <!-- Sweet Alert -->
+    <link th:href="@{/css/plugins/sweetalert/sweetalert.css}" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation" th:include="nav :: navigation"></nav>
+    <div id="page-wrapper" class="gray-bg">
+        <div class="border-bottom" th:include="header :: headerTop"></div>
+        <div class="row wrapper border-bottom white-bg page-heading" th:fragment="headerNav">
+            <div class="col-lg-10">
+                <h2>数据管理</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a th:href="@{/data/list}">数据列表</a>
+                    </li>
+                    <li>
+                        <a href="#">数据分析</a>
+                    </li>
+                    <li class="active">
+                        <strong style="color: red" th:text="${itemName}">数据分析</strong>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-content">
+                            <div class="table-responsive">
+                                <h2>线图</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="flot-chart">
+                                        <div class="flot-chart-content" id="liquid-chart"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="flot-chart">
+                                        <div class="flot-chart-content" id="pressure-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-offset-5  m-b-xs" >
+                                    <a id="btn" class="btn btn-primary btn-md" data-toggle="tooltip"
+                                        data-placement="left" title="" data-original-title="Refresh inbox">&nbsp;&nbsp;&nbsp;&nbsp;煎药结果&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" th:include="footer :: copyright"></div>
+    </div>
+</div>
+
+<!-- Mainly scripts -->
+<script th:src="@{/js/jquery-2.1.1.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/plugins/metisMenu/jquery.metisMenu.js}"></script>
+<script th:src="@{/js/plugins/slimscroll/jquery.slimscroll.min.js}"></script>
+
+<!-- Peity -->
+<script th:src="@{/js/plugins/peity/jquery.peity.min.js}"></script>
+
+<!-- Custom and plugin javascript -->
+<script th:src="@{/js/inspinia.js}"></script>
+<script th:src="@{/js/plugins/pace/pace.min.js}"></script>
+
+<!-- Toastr script -->
+<script th:src="@{/js/plugins/toastr/toastr.min.js}"></script>
+
+<!-- common -->
+<script th:src="@{/js/common.js}"></script>
+
+<!-- SUMMERNOTE -->
+<script th:src="@{/js/plugins/summernote/summernote.min.js}"></script>
+<!-- Sweet alert -->
+<script th:src="@{/js/plugins/sweetalert/sweetalert.min.js}"></script>
+
+<!-- EayPIE -->
+<script th:src="@{/js/plugins/easypiechart/jquery.easypiechart.js}"></script>
+<script th:src="@{/js/echarts.min.js}"></script>
+
+
+<script th:inline="javascript">
+    var actualPressure = [[${actualPressure}]];
+    var standardPressure = [[${standardPressure}]];
+    var actualLiquid = [[${actualLiquid}]];
+    var standardLiquid = [[${standardLiquid}]];
+
+    //计算差值
+    var mathPressure = [];
+    var mathLiquid = [];
+    for (var i = 0; i <= 10; i++) {
+        mathPressure.push(Math.abs(actualPressure[i] - standardPressure[i]));
+        mathLiquid.push(Math.abs(actualLiquid[i] - standardLiquid[i]));
+    }
+
+    //计算方差，用于展示
+    //定义两个简单的函数
+    var sum = function(x,y){ return x+y;};　　//求和函数
+    var square = function(x){ return x*x;};　　//数组中每个元素求它的平方
+
+    var data = mathPressure.concat(mathLiquid);
+    var mean = data.reduce(sum)/data.length;
+    var deviations = data.map(function(x){return x-mean;});
+    var stddev = Math.sqrt(deviations.map(square).reduce(sum)/(data.length-1));
+    stddev = stddev.toFixed(2);
+    console.log("平均值："+mean);
+    console.log("偏差："+deviations);
+    console.log("标准差："+stddev);
+
+    var res = null;
+    if(stddev>5){
+        res = "煎药失败";
+    }else{
+        res = "煎药成功";
+    }
+
+    var msg= "当前方差:"+stddev+" , "+res;
+    btn.onclick = function(){
+        swal({
+            title: "煎药结果",
+            text: msg
+        });
+    };
+
+    $(document).ready(function () {
+        // 基于准备好的dom，初始化echarts实例
+        var liquidChart = echarts.init(document.getElementById('liquid-chart'));
+        var pressureChart = echarts.init(document.getElementById('pressure-chart'));
+
+        // 指定图表的配置项和数据
+        var liquidOption = {
+            title: {
+                text: ''
+            },
+            tooltip: {trigger: 'axis'},
+            legend: {
+                data: ['实际', '标准','差值(绿色正常,红色误差大)']
+            },
+            color: ["#008be9", "#ffbe08","#00ff9c"],
+            xAxis: {
+                name: '水温',
+                data: ["0°C", "10°C", "20°C", "30°C", "40°C", "50°C", "60°C", "70°C", "80°C", "90°C", "100°C"]
+            },
+            yAxis: {type: 'value', name: '压力'},
+            visualMap: {
+                show: false,
+                seriesIndex: 2,
+                pieces: [
+                    {
+                        gt: 0,
+                        lte: 5, //这儿设置基线上下颜色区分 基线下面为绿色
+                        color: "#00ff9c"
+                    },
+
+                    {
+                        gt: 5, //这儿设置基线上下颜色区分 基线上面为红色
+                        color: "#ff0000"
+                    }
+                ]
+            },
+            series: [{
+                name: '实际',
+                type: 'line',
+                itemStyle: {
+                    normal: {
+                        lineStyle: {
+                            width: 2,
+                            color: '#008be9',
+                            type: 'solid'  //'dotted'虚线 'solid'实线
+                        }
+                    }
+                },
+                data: actualPressure
+            }, {
+                name: '标准',
+                type: 'line',
+                itemStyle: {
+                    normal: {
+                        lineStyle: {
+                            width: 2,
+                            color: '#ffbe08',
+                            type: 'solid'  //'dotted'虚线 'solid'实线
+                        }
+                    }
+                },
+                data: standardPressure
+            }, {
+                name: '差值(绿色正常,红色误差大)',
+                type: 'line',
+                smooth: false,   //关键点，为true是不支持虚线，实线就用true
+                itemStyle: {
+                    normal: {
+                        lineStyle: {
+                            width: 1,
+                            type: 'dotted'  //'dotted'虚线 'solid'实线
+                        }
+                    }
+                },
+                data: mathPressure
+
+            }]
+        };
+
+        var pressureOption = {
+            title: {
+                text: ''
+            },
+            tooltip: {trigger: 'axis'},
+            legend: {
+                data: ['实际', '标准','差值(绿色正常,红色误差大)']
+            },
+            color: ["#008be9", "#ffbe08","#00ff9c"],
+            xAxis: {
+                name: '水温',
+                data: ["0°C", "10°C", "20°C", "30°C", "40°C", "50°C", "60°C", "70°C", "80°C", "90°C", "100°C"]
+            },
+            yAxis: {type: 'value', name: '液高'},
+            visualMap: {
+                show: false,
+                seriesIndex: 2,
+                pieces: [
+                    {
+                        gt: 0,
+                        lte: 5, //这儿设置基线上下颜色区分 基线下面为绿色
+                        color: "#00ff9c"
+                    },
+                    {
+                        gt: 5, //这儿设置基线上下颜色区分 基线上面为红色
+                        color: "#ff0000"
+                    }
+                ]
+            },
+            series: [{
+                name: '实际',
+                type: 'line',
+                itemStyle: {
+                    normal: {
+                        lineStyle: {
+                            width: 2,
+                            color: '#008be9',
+                            type: 'solid'  //'dotted'虚线 'solid'实线
+                        }
+                    }
+                },
+                data: actualLiquid
+            }, {
+                name: '标准',
+                type: 'line',
+                itemStyle: {
+                    normal: {
+                        lineStyle: {
+                            width: 2,
+                            color: '#ffbe08',
+                            type: 'solid'  //'dotted'虚线 'solid'实线
+                        }
+                    }
+                },
+                data: standardLiquid
+            }, {
+                name: '差值(绿色正常,红色误差大)',
+                type: 'line',
+                smooth: false,   //关键点，为true是不支持虚线，实线就用true
+                itemStyle: {
+                    normal: {
+                        lineStyle: {
+                            width: 1,
+                            type: 'dotted'  //'dotted'虚线 'solid'实线
+                        }
+                    }
+                },
+                data: mathLiquid
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        liquidChart.setOption(liquidOption);
+        pressureChart.setOption(pressureOption);
+    });
+</script>
+
+</body>
+
+</html>

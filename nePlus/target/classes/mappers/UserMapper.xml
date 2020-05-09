@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ep.mapper.UserMapper">
+    <select id="userList" resultType="com.ep.model.entity.User" parameterType="string">
+        select * from tb_user
+        <where>
+            and type = 'user'
+            <if test="nameParam!=null and nameParam!=''">
+                and name like CONCAT('%', #{nameParam ,jdbcType=VARCHAR}, '%')
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+
+    <select id="checkName" parameterType="string" resultType="int">
+        select count(*) from tb_user where username =#{username}
+    </select>
+</mapper>

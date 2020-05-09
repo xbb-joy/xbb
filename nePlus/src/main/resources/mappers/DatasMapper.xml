@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ep.mapper.DatasMapper">
+    <select id="dataList" resultType="com.ep.model.entity.Datas" parameterType="string">
+        select id,name,create_time,update_time  from tb_datas
+        order by create_time desc
+    </select>
+
+    <select id="checkName" parameterType="string" resultType="int">
+            select count(*) from tb_datas where name =#{name}
+    </select>
+
+    <select id="selectItemList" parameterType="string" resultType="com.ep.model.entity.DataItem">
+        SELECT * FROM tb_data_item where data_id = #{dataId} order by type
+    </select>
+
+    <select id="selectDataItemById" parameterType="string" resultType="com.ep.model.entity.DataItem">
+        SELECT * FROM tb_data_item where id = #{id}
+    </select>
+    <insert id="insertItem" parameterType="com.ep.model.entity.DataItem">
+        insert into tb_data_item (id, data_id,type,zero,one,two,three,four,five,six,seven,eight,nine,ten)
+        values
+        <foreach collection="list" item="record" separator=",">
+            (#{record.id,jdbcType=VARCHAR}, #{record.dataId,jdbcType=VARCHAR},
+            #{record.type,jdbcType=INTEGER},#{record.zero,jdbcType=INTEGER},
+            #{record.one,jdbcType=INTEGER},#{record.two,jdbcType=INTEGER},
+            #{record.three,jdbcType=INTEGER},#{record.four,jdbcType=INTEGER},
+            #{record.five,jdbcType=INTEGER},#{record.six,jdbcType=INTEGER},
+            #{record.seven,jdbcType=INTEGER},#{record.eight,jdbcType=INTEGER},
+            #{record.nine,jdbcType=INTEGER},#{record.ten,jdbcType=INTEGER})
+        </foreach>
+    </insert>
+</mapper>

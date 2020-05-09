@@ -1,0 +1,305 @@
+2020-04-24 00:26:22.648 [http-nio-9090-exec-7] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==>  Preparing: select * from tb_user where username = ? and password=? 
+2020-04-24 00:26:22.782 [http-nio-9090-exec-7] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==> Parameters: admin(String), admin(String)
+2020-04-24 00:26:22.816 [http-nio-9090-exec-7] DEBUG com.ep.mapper.LoginMapper.checkLogin - <==      Total: 1
+2020-04-24 00:26:25.456 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 00:26:25.458 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 00:26:25.489 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 00:26:28.615 [http-nio-9090-exec-10] DEBUG com.ep.mapper.DatasMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,name,create_time,update_time FROM tb_datas WHERE id = ? 
+2020-04-24 00:26:28.620 [http-nio-9090-exec-10] DEBUG com.ep.mapper.DatasMapper.selectByPrimaryKey - ==> Parameters: 73b8aba390834fa1a3afc583508f32c7(String)
+2020-04-24 00:26:28.647 [http-nio-9090-exec-10] DEBUG com.ep.mapper.DatasMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 00:26:31.309 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 00:26:31.310 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 00:26:31.340 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 00:26:34.400 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 00:26:34.404 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: 73b8aba390834fa1a3afc583508f32c7(String)
+2020-04-24 00:26:34.457 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 00:26:36.386 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 00:26:36.390 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 00:26:36.433 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 00:26:52.478 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,name,create_time,update_time FROM tb_datas WHERE id = ? 
+2020-04-24 00:26:52.480 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.selectByPrimaryKey - ==> Parameters: 73b8aba390834fa1a3afc583508f32c7(String)
+2020-04-24 00:26:52.510 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 00:26:55.973 [http-nio-9090-exec-1] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 00:26:55.975 [http-nio-9090-exec-1] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 00:26:56.006 [http-nio-9090-exec-1] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 00:27:03.171 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 00:27:03.172 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: 73b8aba390834fa1a3afc583508f32c7(String)
+2020-04-24 00:27:03.200 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 00:27:27.574 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 00:27:27.575 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 00:27:27.606 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 00:27:31.863 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 00:27:31.865 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: d333c56e43d14f6a92a0f02ca22fd1b3(String)
+2020-04-24 00:27:31.917 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 00:27:34.641 [http-nio-9090-exec-1] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,data_id,type,zero,one,two,three,four,five,six,seven,eight,nine,ten FROM tb_data_item WHERE id = ? 
+2020-04-24 00:27:34.642 [http-nio-9090-exec-1] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - ==> Parameters: f7c1b2077ca448de81cc63d5ef4c25aa(String)
+2020-04-24 00:27:34.673 [http-nio-9090-exec-1] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 00:27:47.008 [http-nio-9090-exec-7] DEBUG c.e.m.DataItemMapper.updateByPrimaryKeySelective - ==>  Preparing: UPDATE tb_data_item SET zero = ?,one = ?,two = ?,three = ?,four = ?,five = ?,six = ?,seven = ?,eight = ?,nine = ?,ten = ? WHERE id = ? 
+2020-04-24 00:27:47.014 [http-nio-9090-exec-7] DEBUG c.e.m.DataItemMapper.updateByPrimaryKeySelective - ==> Parameters: 10.0(Double), 20.0(Double), 50.0(Double), 100.0(Double), 120.0(Double), 130.0(Double), 156.0(Double), 174.0(Double), 160.0(Double), 180.0(Double), 180.0(Double), f7c1b2077ca448de81cc63d5ef4c25aa(String)
+2020-04-24 00:27:47.044 [http-nio-9090-exec-7] DEBUG c.e.m.DataItemMapper.updateByPrimaryKeySelective - <==    Updates: 1
+2020-04-24 00:27:49.714 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 00:27:49.717 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: d333c56e43d14f6a92a0f02ca22fd1b3(String)
+2020-04-24 00:27:49.745 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 01:15:23.683 [http-nio-9090-exec-2] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==>  Preparing: select * from tb_user where username = ? and password=? 
+2020-04-24 01:15:23.689 [http-nio-9090-exec-2] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==> Parameters: admin(String), admin(String)
+2020-04-24 01:15:23.729 [http-nio-9090-exec-2] DEBUG com.ep.mapper.LoginMapper.checkLogin - <==      Total: 1
+2020-04-24 01:15:25.156 [http-nio-9090-exec-6] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 01:15:25.157 [http-nio-9090-exec-6] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 01:15:25.208 [http-nio-9090-exec-6] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 01:15:26.837 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 01:15:26.838 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 01:15:26.875 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 01:15:33.142 [http-nio-9090-exec-10] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 01:15:33.147 [http-nio-9090-exec-10] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: 73b8aba390834fa1a3afc583508f32c7(String)
+2020-04-24 01:15:33.184 [http-nio-9090-exec-10] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 01:15:35.069 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,data_id,type,zero,one,two,three,four,five,six,seven,eight,nine,ten FROM tb_data_item WHERE id = ? 
+2020-04-24 01:15:35.071 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - ==> Parameters: d25ca8a7e053496189fa401ccd4d4a5c(String)
+2020-04-24 01:15:35.102 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 01:16:38.902 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 01:16:38.904 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 01:16:38.932 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 02:48:58.260 [http-nio-9090-exec-2] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==>  Preparing: select * from tb_user where username = ? and password=? 
+2020-04-24 02:48:58.274 [http-nio-9090-exec-2] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==> Parameters: 201601014046(String), 123456(String)
+2020-04-24 02:48:58.319 [http-nio-9090-exec-2] DEBUG com.ep.mapper.LoginMapper.checkLogin - <==      Total: 1
+2020-04-24 02:49:01.642 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,username,password,name,email,phone,create_time,update_time,type FROM tb_user WHERE id = ? 
+2020-04-24 02:49:01.644 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==> Parameters: 6e62d130894a43cc9ea4dc526796b749(String)
+2020-04-24 02:49:01.677 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 10:16:44.389 [main] INFO  com.ep.Application - Starting Application on DESKTOP-R32HJDM with PID 18088 (started by Joy in E:\文档\毕业设计\nePlus)
+2020-04-24 10:16:44.422 [main] DEBUG com.ep.Application - Running with Spring Boot v2.1.10.RELEASE, Spring v5.1.11.RELEASE
+2020-04-24 10:16:44.423 [main] INFO  com.ep.Application - No active profile set, falling back to default profiles: default
+2020-04-24 10:16:47.089 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'dataItemMapper' and 'com.ep.mapper.DataItemMapper' mapperInterface. Bean already defined with the same name!
+2020-04-24 10:16:47.094 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'datasMapper' and 'com.ep.mapper.DatasMapper' mapperInterface. Bean already defined with the same name!
+2020-04-24 10:16:47.095 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'loginMapper' and 'com.ep.mapper.LoginMapper' mapperInterface. Bean already defined with the same name!
+2020-04-24 10:16:47.095 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - Skipping MapperFactoryBean with name 'userMapper' and 'com.ep.mapper.UserMapper' mapperInterface. Bean already defined with the same name!
+2020-04-24 10:16:47.096 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.ep]' package. Please check your configuration.
+2020-04-24 10:16:49.829 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d560be2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-24 10:16:53.401 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2020-04-24 10:16:53.504 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-04-24 10:16:53.506 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+2020-04-24 10:16:54.017 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-04-24 10:16:54.018 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9406 ms
+2020-04-24 10:16:54.417 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-04-24 10:16:55.242 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-04-24 10:16:57.259 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-24 10:16:57.432 [main] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-04-24 10:16:57.522 [main] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-04-24 10:16:57.582 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2020-04-24 10:16:57.588 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2020-04-24 10:16:57.589 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2020-04-24 10:16:57.590 [main] INFO  t.mybatis.mapper.autoconfigure.MapperCacheDisabler - Clear EntityHelper entityTableMap cache.
+2020-04-24 10:16:58.093 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-24 10:16:58.346 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2020-04-24 10:16:58.352 [main] INFO  com.ep.Application - Started Application in 16.286 seconds (JVM running for 18.04)
+2020-04-24 10:17:20.330 [http-nio-9090-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-24 10:17:20.331 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-04-24 10:17:20.357 [http-nio-9090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 18 ms
+2020-04-24 10:17:39.416 [http-nio-9090-exec-10] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==>  Preparing: select * from tb_user where username = ? and password=? 
+2020-04-24 10:17:39.527 [http-nio-9090-exec-10] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==> Parameters: admin(String), admin(String)
+2020-04-24 10:17:39.629 [http-nio-9090-exec-10] DEBUG com.ep.mapper.LoginMapper.checkLogin - <==      Total: 1
+2020-04-24 10:17:48.825 [http-nio-9090-exec-1] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 10:17:48.827 [http-nio-9090-exec-1] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 10:17:48.858 [http-nio-9090-exec-1] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 10:17:51.387 [http-nio-9090-exec-10] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 10:17:51.388 [http-nio-9090-exec-10] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 10:17:51.417 [http-nio-9090-exec-10] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 10:17:56.670 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 10:17:56.672 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 10:17:56.701 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 10:18:00.473 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 10:18:00.475 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 10:18:00.504 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 10:18:06.395 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 10:18:06.398 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: 73b8aba390834fa1a3afc583508f32c7(String)
+2020-04-24 10:18:06.431 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 10:18:08.982 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,data_id,type,zero,one,two,three,four,five,six,seven,eight,nine,ten FROM tb_data_item WHERE id = ? 
+2020-04-24 10:18:08.983 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - ==> Parameters: d25ca8a7e053496189fa401ccd4d4a5c(String)
+2020-04-24 10:18:09.012 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 10:18:34.897 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 10:18:34.899 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: 73b8aba390834fa1a3afc583508f32c7(String)
+2020-04-24 10:18:34.929 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 10:18:40.080 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 10:18:40.081 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 10:18:40.110 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 10:18:47.371 [http-nio-9090-exec-10] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,username,password,name,email,phone,create_time,update_time,type FROM tb_user WHERE id = ? 
+2020-04-24 10:18:47.373 [http-nio-9090-exec-10] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==> Parameters: 1(String)
+2020-04-24 10:18:47.403 [http-nio-9090-exec-10] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 10:19:03.344 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,username,password,name,email,phone,create_time,update_time,type FROM tb_user WHERE id = ? 
+2020-04-24 10:19:03.345 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==> Parameters: 1(String)
+2020-04-24 10:19:03.373 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 10:19:03.376 [http-nio-9090-exec-4] DEBUG c.ep.mapper.UserMapper.updateByPrimaryKeySelective - ==>  Preparing: UPDATE tb_user SET username = ?,password = ?,name = ?,email = ?,phone = ?,update_time = ?,type = ? WHERE id = ? 
+2020-04-24 10:19:03.377 [http-nio-9090-exec-4] DEBUG c.ep.mapper.UserMapper.updateByPrimaryKeySelective - ==> Parameters: admin(String), admin(String), 超级管理员(String), 12121321@qq.cpm(String), a(String), 2020-04-24 10:19:03.374(Timestamp), admin(String), 1(String)
+2020-04-24 10:19:03.436 [http-nio-9090-exec-4] DEBUG c.ep.mapper.UserMapper.updateByPrimaryKeySelective - <==    Updates: 1
+2020-04-24 10:19:11.736 [http-nio-9090-exec-3] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,username,password,name,email,phone,create_time,update_time,type FROM tb_user WHERE id = ? 
+2020-04-24 10:19:11.737 [http-nio-9090-exec-3] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==> Parameters: 1(String)
+2020-04-24 10:19:11.764 [http-nio-9090-exec-3] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 10:19:11.766 [http-nio-9090-exec-3] DEBUG c.ep.mapper.UserMapper.updateByPrimaryKeySelective - ==>  Preparing: UPDATE tb_user SET username = ?,password = ?,name = ?,email = ?,phone = ?,update_time = ?,type = ? WHERE id = ? 
+2020-04-24 10:19:11.767 [http-nio-9090-exec-3] DEBUG c.ep.mapper.UserMapper.updateByPrimaryKeySelective - ==> Parameters: admin(String), admin(String), 超级管理员(String), 12121321@qq.cpm(String), 1234567(String), 2020-04-24 10:19:11.765(Timestamp), admin(String), 1(String)
+2020-04-24 10:19:11.799 [http-nio-9090-exec-3] DEBUG c.ep.mapper.UserMapper.updateByPrimaryKeySelective - <==    Updates: 1
+2020-04-24 10:19:15.686 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 10:19:15.688 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 10:19:15.716 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 10:19:19.458 [http-nio-9090-exec-9] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 10:19:19.459 [http-nio-9090-exec-9] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 10:19:19.489 [http-nio-9090-exec-9] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 12:40:42.294 [http-nio-9090-exec-4] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==>  Preparing: select * from tb_user where username = ? and password=? 
+2020-04-24 12:40:42.301 [http-nio-9090-exec-4] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==> Parameters: admin(String), admin(String)
+2020-04-24 12:40:42.340 [http-nio-9090-exec-4] DEBUG com.ep.mapper.LoginMapper.checkLogin - <==      Total: 1
+2020-04-24 12:40:44.680 [http-nio-9090-exec-5] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 12:40:44.683 [http-nio-9090-exec-5] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 12:40:44.723 [http-nio-9090-exec-5] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 12:40:51.688 [http-nio-9090-exec-3] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 12:40:51.691 [http-nio-9090-exec-3] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 12:40:51.728 [http-nio-9090-exec-3] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 12:40:54.366 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 12:40:54.368 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 12:40:54.403 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 12:45:04.991 [http-nio-9090-exec-3] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 12:45:04.993 [http-nio-9090-exec-3] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 12:45:05.021 [http-nio-9090-exec-3] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 12:52:01.448 [http-nio-9090-exec-5] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 12:52:01.451 [http-nio-9090-exec-5] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 12:52:01.493 [http-nio-9090-exec-5] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 12:55:35.817 [http-nio-9090-exec-1] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 12:55:35.819 [http-nio-9090-exec-1] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 12:55:35.852 [http-nio-9090-exec-1] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 13:01:41.310 [http-nio-9090-exec-2] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==>  Preparing: select * from tb_user where username = ? and password=? 
+2020-04-24 13:01:41.311 [http-nio-9090-exec-2] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==> Parameters: 20160104046(String), 123456(String)
+2020-04-24 13:01:41.358 [http-nio-9090-exec-2] DEBUG com.ep.mapper.LoginMapper.checkLogin - <==      Total: 0
+2020-04-24 13:09:14.477 [http-nio-9090-exec-8] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==>  Preparing: select * from tb_user where username = ? and password=? 
+2020-04-24 13:09:14.479 [http-nio-9090-exec-8] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==> Parameters: 201601014046(String), 123456(String)
+2020-04-24 13:09:14.513 [http-nio-9090-exec-8] DEBUG com.ep.mapper.LoginMapper.checkLogin - <==      Total: 1
+2020-04-24 13:09:18.559 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 13:09:18.561 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 13:09:18.597 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 13:09:20.481 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,username,password,name,email,phone,create_time,update_time,type FROM tb_user WHERE id = ? 
+2020-04-24 13:09:20.482 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==> Parameters: 6e62d130894a43cc9ea4dc526796b749(String)
+2020-04-24 13:09:20.516 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 13:10:35.199 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 13:10:35.201 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 13:10:35.234 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 13:11:45.434 [http-nio-9090-exec-6] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 13:11:45.435 [http-nio-9090-exec-6] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: d333c56e43d14f6a92a0f02ca22fd1b3(String)
+2020-04-24 13:11:45.473 [http-nio-9090-exec-6] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 13:13:00.566 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 13:13:00.568 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 13:13:00.599 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 13:13:03.434 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 13:13:03.436 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: d333c56e43d14f6a92a0f02ca22fd1b3(String)
+2020-04-24 13:13:03.477 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 13:14:56.517 [http-nio-9090-exec-7] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==>  Preparing: select * from tb_user where username = ? and password=? 
+2020-04-24 13:14:56.518 [http-nio-9090-exec-7] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==> Parameters: admin(String), admin(String)
+2020-04-24 13:14:56.555 [http-nio-9090-exec-7] DEBUG com.ep.mapper.LoginMapper.checkLogin - <==      Total: 1
+2020-04-24 13:14:58.278 [http-nio-9090-exec-9] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,username,password,name,email,phone,create_time,update_time,type FROM tb_user WHERE id = ? 
+2020-04-24 13:14:58.279 [http-nio-9090-exec-9] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==> Parameters: 1(String)
+2020-04-24 13:14:58.313 [http-nio-9090-exec-9] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 13:15:02.605 [http-nio-9090-exec-1] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 13:15:02.607 [http-nio-9090-exec-1] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 13:15:02.641 [http-nio-9090-exec-1] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 13:18:25.791 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 13:18:25.792 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 13:18:25.819 [http-nio-9090-exec-5] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 13:18:28.399 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,name,create_time,update_time FROM tb_datas WHERE id = ? 
+2020-04-24 13:18:28.401 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.selectByPrimaryKey - ==> Parameters: 73b8aba390834fa1a3afc583508f32c7(String)
+2020-04-24 13:18:28.430 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 13:18:30.511 [http-nio-9090-exec-3] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 13:18:30.512 [http-nio-9090-exec-3] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 13:18:30.544 [http-nio-9090-exec-3] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 13:18:34.000 [http-nio-9090-exec-1] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 13:18:34.003 [http-nio-9090-exec-1] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: 73b8aba390834fa1a3afc583508f32c7(String)
+2020-04-24 13:18:34.034 [http-nio-9090-exec-1] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 13:18:35.459 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,data_id,type,zero,one,two,three,four,five,six,seven,eight,nine,ten FROM tb_data_item WHERE id = ? 
+2020-04-24 13:18:35.461 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - ==> Parameters: d25ca8a7e053496189fa401ccd4d4a5c(String)
+2020-04-24 13:18:35.492 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 13:18:38.178 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 13:18:38.180 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: 73b8aba390834fa1a3afc583508f32c7(String)
+2020-04-24 13:18:38.210 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 13:20:12.886 [http-nio-9090-exec-6] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 13:20:12.888 [http-nio-9090-exec-6] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 13:20:12.924 [http-nio-9090-exec-6] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 13:20:16.409 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,username,password,name,email,phone,create_time,update_time,type FROM tb_user WHERE id = ? 
+2020-04-24 13:20:16.411 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==> Parameters: c5e7fd238dfb4d0e9153d024a173fc86(String)
+2020-04-24 13:20:16.450 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 13:31:35.348 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 13:31:35.350 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 13:31:35.377 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 13:31:36.605 [http-nio-9090-exec-10] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 13:31:36.606 [http-nio-9090-exec-10] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 13:31:36.633 [http-nio-9090-exec-10] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 13:31:40.851 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 13:31:40.853 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 13:31:40.889 [http-nio-9090-exec-4] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 13:31:44.128 [http-nio-9090-exec-8] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,username,password,name,email,phone,create_time,update_time,type FROM tb_user WHERE id = ? 
+2020-04-24 13:31:44.129 [http-nio-9090-exec-8] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==> Parameters: 6e62d130894a43cc9ea4dc526796b749(String)
+2020-04-24 13:31:44.156 [http-nio-9090-exec-8] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 13:31:46.227 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 13:31:46.229 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 13:31:46.255 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 13:32:30.267 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 13:32:30.269 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 13:32:30.295 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 13:32:32.877 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 13:32:32.880 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: d333c56e43d14f6a92a0f02ca22fd1b3(String)
+2020-04-24 13:32:32.907 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 13:33:16.700 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,data_id,type,zero,one,two,three,four,five,six,seven,eight,nine,ten FROM tb_data_item WHERE id = ? 
+2020-04-24 13:33:16.703 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - ==> Parameters: f9b7e51f23414a25ba488c07fcc93d5b(String)
+2020-04-24 13:33:16.732 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 18:07:04.392 [http-nio-9090-exec-5] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==>  Preparing: select * from tb_user where username = ? and password=? 
+2020-04-24 18:07:04.406 [http-nio-9090-exec-5] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==> Parameters: admin(String), admin(String)
+2020-04-24 18:07:04.520 [http-nio-9090-exec-5] DEBUG com.ep.mapper.LoginMapper.checkLogin - <==      Total: 1
+2020-04-24 18:07:08.399 [http-nio-9090-exec-6] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 18:07:08.401 [http-nio-9090-exec-6] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 18:07:08.438 [http-nio-9090-exec-6] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 18:07:23.236 [http-nio-9090-exec-5] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 18:07:23.255 [http-nio-9090-exec-5] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 18:07:23.292 [http-nio-9090-exec-5] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 18:07:25.627 [http-nio-9090-exec-2] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,username,password,name,email,phone,create_time,update_time,type FROM tb_user WHERE id = ? 
+2020-04-24 18:07:25.629 [http-nio-9090-exec-2] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==> Parameters: c5e7fd238dfb4d0e9153d024a173fc86(String)
+2020-04-24 18:07:25.665 [http-nio-9090-exec-2] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 18:08:23.906 [http-nio-9090-exec-6] DEBUG c.ep.mapper.UserMapper.updateByPrimaryKeySelective - ==>  Preparing: UPDATE tb_user SET username = ?,password = ?,name = ?,email = ?,phone = ?,update_time = ? WHERE id = ? 
+2020-04-24 18:08:23.914 [http-nio-9090-exec-6] DEBUG c.ep.mapper.UserMapper.updateByPrimaryKeySelective - ==> Parameters: 201601014002(String), 123456(String), zl(String), 123123@qq.com(String), 1234567(String), 2020-04-24 18:08:23.905(Timestamp), c5e7fd238dfb4d0e9153d024a173fc86(String)
+2020-04-24 18:08:23.955 [http-nio-9090-exec-6] DEBUG c.ep.mapper.UserMapper.updateByPrimaryKeySelective - <==    Updates: 1
+2020-04-24 18:08:55.697 [http-nio-9090-exec-7] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,username,password,name,email,phone,create_time,update_time,type FROM tb_user WHERE id = ? 
+2020-04-24 18:08:55.714 [http-nio-9090-exec-7] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - ==> Parameters: 1(String)
+2020-04-24 18:08:55.753 [http-nio-9090-exec-7] DEBUG com.ep.mapper.UserMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 22:36:45.530 [http-nio-9090-exec-3] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==>  Preparing: select * from tb_user where username = ? and password=? 
+2020-04-24 22:36:45.540 [http-nio-9090-exec-3] DEBUG com.ep.mapper.LoginMapper.checkLogin - ==> Parameters: admin(String), admin(String)
+2020-04-24 22:36:45.581 [http-nio-9090-exec-3] DEBUG com.ep.mapper.LoginMapper.checkLogin - <==      Total: 1
+2020-04-24 22:36:46.621 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 22:36:46.623 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 22:36:46.666 [http-nio-9090-exec-4] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 22:36:48.489 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 22:36:48.491 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: 73b8aba390834fa1a3afc583508f32c7(String)
+2020-04-24 22:36:48.534 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 22:36:50.407 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 22:36:50.410 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 22:36:50.441 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 22:36:53.704 [http-nio-9090-exec-3] DEBUG com.ep.mapper.DatasMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,name,create_time,update_time FROM tb_datas WHERE id = ? 
+2020-04-24 22:36:53.707 [http-nio-9090-exec-3] DEBUG com.ep.mapper.DatasMapper.selectByPrimaryKey - ==> Parameters: d333c56e43d14f6a92a0f02ca22fd1b3(String)
+2020-04-24 22:36:53.736 [http-nio-9090-exec-3] DEBUG com.ep.mapper.DatasMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 22:36:55.491 [http-nio-9090-exec-1] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 22:36:55.494 [http-nio-9090-exec-1] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 22:36:55.525 [http-nio-9090-exec-1] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 22:36:57.680 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 22:36:57.681 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: d333c56e43d14f6a92a0f02ca22fd1b3(String)
+2020-04-24 22:36:57.755 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 22:57:42.186 [http-nio-9090-exec-2] DEBUG com.ep.mapper.UserMapper.userList - ==>  Preparing: select * from tb_user WHERE type = 'user' order by create_time desc 
+2020-04-24 22:57:42.187 [http-nio-9090-exec-2] DEBUG com.ep.mapper.UserMapper.userList - ==> Parameters: 
+2020-04-24 22:57:42.221 [http-nio-9090-exec-2] DEBUG com.ep.mapper.UserMapper.userList - <==      Total: 2
+2020-04-24 22:57:44.637 [http-nio-9090-exec-3] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 22:57:44.640 [http-nio-9090-exec-3] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 22:57:44.768 [http-nio-9090-exec-3] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 23:01:51.153 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 23:01:51.154 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: 73b8aba390834fa1a3afc583508f32c7(String)
+2020-04-24 23:01:51.180 [http-nio-9090-exec-7] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 23:03:10.263 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - ==>  Preparing: SELECT id,data_id,type,zero,one,two,three,four,five,six,seven,eight,nine,ten FROM tb_data_item WHERE id = ? 
+2020-04-24 23:03:10.264 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - ==> Parameters: d25ca8a7e053496189fa401ccd4d4a5c(String)
+2020-04-24 23:03:10.295 [http-nio-9090-exec-2] DEBUG com.ep.mapper.DataItemMapper.selectByPrimaryKey - <==      Total: 1
+2020-04-24 23:03:35.206 [http-nio-9090-exec-6] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==>  Preparing: SELECT * FROM tb_data_item where data_id = ? order by type 
+2020-04-24 23:03:35.208 [http-nio-9090-exec-6] DEBUG com.ep.mapper.DatasMapper.selectItemList - ==> Parameters: 73b8aba390834fa1a3afc583508f32c7(String)
+2020-04-24 23:03:35.244 [http-nio-9090-exec-6] DEBUG com.ep.mapper.DatasMapper.selectItemList - <==      Total: 4
+2020-04-24 23:10:41.933 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 23:10:41.934 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 23:10:41.965 [http-nio-9090-exec-8] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
+2020-04-24 23:10:50.806 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.dataList - ==>  Preparing: select id,name,create_time,update_time from tb_datas order by create_time desc 
+2020-04-24 23:10:50.807 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.dataList - ==> Parameters: 
+2020-04-24 23:10:50.840 [http-nio-9090-exec-9] DEBUG com.ep.mapper.DatasMapper.dataList - <==      Total: 2
