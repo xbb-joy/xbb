@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServ</servlet-name>
+    <servlet-class>user.servlet.LoginServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterServ</servlet-name>
+    <servlet-class>user.servlet.RegisterServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectUserServ</servlet-name>
+    <servlet-class>user.servlet.SelectUserServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteUserServ</servlet-name>
+    <servlet-class>user.servlet.DeleteUserServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectByUseridServ</servlet-name>
+    <servlet-class>user.servlet.SelectByUseridServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateUserServ</servlet-name>
+    <servlet-class>user.servlet.UpdateUserServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddUserServ</servlet-name>
+    <servlet-class>user.servlet.AddUserServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectRoomServ</servlet-name>
+    <servlet-class>room.servlet.SelectRoomServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectByRoomidServ</servlet-name>
+    <servlet-class>room.servlet.SelectByRoomidServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteRoomServ</servlet-name>
+    <servlet-class>room.servlet.DeleteRoomServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateRoomServ</servlet-name>
+    <servlet-class>room.servlet.UpdateRoomServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddRoomServ</servlet-name>
+    <servlet-class>room.servlet.AddRoomServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectRoomServ1</servlet-name>
+    <servlet-class>room.servlet.SelectRoomServ1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectByUseridServ1</servlet-name>
+    <servlet-class>user.servlet.SelectByUseridServ1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectUserServ1</servlet-name>
+    <servlet-class>user.servlet.SelectUserServ1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateUserServ1</servlet-name>
+    <servlet-class>user.servlet.UpdateUserServ1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteUserServ1</servlet-name>
+    <servlet-class>user.servlet.DeleteUserServ1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddReserveServ</servlet-name>
+    <servlet-class>reserve.servlet.AddReserveServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectReserveServ</servlet-name>
+    <servlet-class>reserve.servlet.SelectReserveServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteReserveServ</servlet-name>
+    <servlet-class>reserve.servlet.DeleteReserveServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateReserveServ</servlet-name>
+    <servlet-class>reserve.servlet.UpdateReserveServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectByDingdanidServ</servlet-name>
+    <servlet-class>reserve.servlet.SelectByDingdanidServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectByStatusServ</servlet-name>
+    <servlet-class>room.servlet.SelectByStatusServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectByTypeServ</servlet-name>
+    <servlet-class>room.servlet.SelectByTypeServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectByPathServ</servlet-name>
+    <servlet-class>room.servlet.SelectByPathServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectByNameServ</servlet-name>
+    <servlet-class>user.servlet.SelectByNameServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReserveServ</servlet-name>
+    <servlet-class>reserve.servlet.ReserveServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddBillServ</servlet-name>
+    <servlet-class>bill.servlet.AddBillServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectBillServ</servlet-name>
+    <servlet-class>bill.servlet.SelectBillServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteBillServ</servlet-name>
+    <servlet-class>bill.servlet.DeleteBillServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectByBillidServ</servlet-name>
+    <servlet-class>bill.servlet.SelectByBillidServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateBillServ</servlet-name>
+    <servlet-class>bill.servlet.UpdateBillServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CountServ</servlet-name>
+    <servlet-class>bill.servlet.CountServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectByDingdanidServ1</servlet-name>
+    <servlet-class>bill.servlet.SelectByDingdanidServ1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectByUsernameServ</servlet-name>
+    <servlet-class>reserve.servlet.SelectByUsernameServ</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateReserveServ1</servlet-name>
+    <servlet-class>reserve.servlet.UpdateReserveServ1</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServ</servlet-name>
+    <url-pattern>/login.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServ</servlet-name>
+    <url-pattern>/register.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectUserServ</servlet-name>
+    <url-pattern>/selectUser.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteUserServ</servlet-name>
+    <url-pattern>/deleteUser.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectByUseridServ</servlet-name>
+    <url-pattern>/selectByUserid.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateUserServ</servlet-name>
+    <url-pattern>/updateUser.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUserServ</servlet-name>
+    <url-pattern>/addUser.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectRoomServ</servlet-name>
+    <url-pattern>/selectRoom.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectByRoomidServ</servlet-name>
+    <url-pattern>/selectByRoomid.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteRoomServ</servlet-name>
+    <url-pattern>/deleteRoom.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateRoomServ</servlet-name>
+    <url-pattern>/updateRoom.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddRoomServ</servlet-name>
+    <url-pattern>/addRoom.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectRoomServ1</servlet-name>
+    <url-pattern>/selectRoom1.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectByUseridServ1</servlet-name>
+    <url-pattern>/selectByUserid1.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectUserServ1</servlet-name>
+    <url-pattern>/selectUser1.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateUserServ1</servlet-name>
+    <url-pattern>/updateUser1.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteUserServ1</servlet-name>
+    <url-pattern>/deleteUser1.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddReserveServ</servlet-name>
+    <url-pattern>/addReserve.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectReserveServ</servlet-name>
+    <url-pattern>/selectReserve.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteReserveServ</servlet-name>
+    <url-pattern>/deleteReserve.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateReserveServ</servlet-name>
+    <url-pattern>/updateReserve.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectByDingdanidServ</servlet-name>
+    <url-pattern>/selectByDingdanid.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectByStatusServ</servlet-name>
+    <url-pattern>/selectByStatus.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectByTypeServ</servlet-name>
+    <url-pattern>/selectByType.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectByPathServ</servlet-name>
+    <url-pattern>/selectByPath.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectByNameServ</servlet-name>
+    <url-pattern>/selectByName.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReserveServ</servlet-name>
+    <url-pattern>/reserve.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddBillServ</servlet-name>
+    <url-pattern>/addBill.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectBillServ</servlet-name>
+    <url-pattern>/selectBill.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteBillServ</servlet-name>
+    <url-pattern>/deleteBill.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectByBillidServ</servlet-name>
+    <url-pattern>/selectByBillid.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateBillServ</servlet-name>
+    <url-pattern>/updateBill.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CountServ</servlet-name>
+    <url-pattern>/count.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectByDingdanidServ1</servlet-name>
+    <url-pattern>/selectByDingdanid1.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectByUsernameServ</servlet-name>
+    <url-pattern>/selectByUsername.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateReserveServ1</servlet-name>
+    <url-pattern>/updateReserve1.do</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
